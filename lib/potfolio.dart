@@ -3641,7 +3641,7 @@ class _PotfolioState extends State<Potfolio> {
                                                           .withOpacity(0.3),
                                                       spreadRadius: 2,
                                                       blurRadius: 8,
-                                                      offset: Offset(6, 6),
+                                                      offset: Offset(6, 5),
                                                     ),
                                                   ],
                                               
