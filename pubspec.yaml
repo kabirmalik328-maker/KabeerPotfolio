@@ -67,6 +67,9 @@ flutter:
     - assets/images/Facebook.png
     - assets/images/flutter.png
     - assets/images/github.png
+    - assets/images/git.png
+    - assets/images/postman.png
+    - assets/images/canva.png
     - assets/images/dart.png
     - assets/images/WhatsApp.png
     - assets/images/kabeerb.jpeg

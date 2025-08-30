@@ -239,10 +239,18 @@ class _PotfolioState extends State<Potfolio> {
             ),
       endDrawer: Drawer(
         child: Container(
+          color: Color(0xffFDEDCD),
           child: ListView(
             children: [
               ListTile(
-                title: Text('Home'),
+                title: Text(
+                  'Home',
+                  style: TextStyle(
+                    color: Color(0xff7c2824),
+                    fontFamily: 'font',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 onTap: () {
                   Navigator.of(context).pop();
                   Scrollable.ensureVisible(
@@ -252,8 +260,13 @@ class _PotfolioState extends State<Potfolio> {
                   );
                 },
               ),
+              Divider(color: Color(0xff7c2824), thickness: 1),
               ListTile(
-                title: Text('About'),
+                title: Text('About', style: TextStyle(
+                    color: Color(0xff7c2824),
+                    fontFamily: 'font',
+                    fontWeight: FontWeight.bold,
+                  ),),
                 onTap: () {
                   Navigator.of(context).pop();
                   Scrollable.ensureVisible(
@@ -263,8 +276,13 @@ class _PotfolioState extends State<Potfolio> {
                   );
                 },
               ),
+              Divider(color: Color(0xff7c2824), thickness: 1),
               ListTile(
-                title: Text("Skill's"),
+                title: Text("Skill's", style: TextStyle(
+                    color: Color(0xff7c2824),
+                    fontFamily: 'font',
+                    fontWeight: FontWeight.bold,
+                  ),),
                 onTap: () {
                   Navigator.of(context).pop();
                   Scrollable.ensureVisible(
@@ -274,8 +292,13 @@ class _PotfolioState extends State<Potfolio> {
                   );
                 },
               ),
+              Divider(color: Color(0xff7c2824), thickness: 1),
               ListTile(
-                title: Text('Education'),
+                title: Text('Education', style: TextStyle(
+                    color: Color(0xff7c2824),
+                    fontFamily: 'font',
+                    fontWeight: FontWeight.bold,
+                  ),),
                 onTap: () {
                   Navigator.of(context).pop();
                   Scrollable.ensureVisible(
@@ -285,8 +308,13 @@ class _PotfolioState extends State<Potfolio> {
                   );
                 },
               ),
+              Divider(color: Color(0xff7c2824), thickness: 1),
               ListTile(
-                title: Text('Work'),
+                title: Text('Work', style: TextStyle(
+                    color: Color(0xff7c2824),
+                    fontFamily: 'font',
+                    fontWeight: FontWeight.bold,
+                  ),),
                 onTap: () {
                   Navigator.of(context).pop();
                   Scrollable.ensureVisible(
@@ -296,8 +324,13 @@ class _PotfolioState extends State<Potfolio> {
                   );
                 },
               ),
+              Divider(color: Color(0xff7c2824), thickness: 1),
               ListTile(
-                title: Text('Experience'),
+                title: Text('Experience', style: TextStyle(
+                    color: Color(0xff7c2824),
+                    fontFamily: 'font',
+                    fontWeight: FontWeight.bold,
+                  ),),
                 onTap: () {
                   Navigator.of(context).pop();
                   Scrollable.ensureVisible(
@@ -307,8 +340,13 @@ class _PotfolioState extends State<Potfolio> {
                   );
                 },
               ),
+              Divider(color: Color(0xff7c2824), thickness: 1),
               ListTile(
-                title: Text('Contact'),
+                title: Text('Contact', style: TextStyle(
+                    color: Color(0xff7c2824),
+                    fontFamily: 'font',
+                    fontWeight: FontWeight.bold,
+                  ),),
                 onTap: () {
                   Navigator.of(context).pop();
                   Scrollable.ensureVisible(
@@ -318,6 +356,7 @@ class _PotfolioState extends State<Potfolio> {
                   );
                 },
               ),
+              Divider(color: Color(0xff7c2824), thickness: 1),
             ],
           ),
         ),
@@ -427,19 +466,19 @@ class _PotfolioState extends State<Potfolio> {
                                             onTap: () {
                                               launchUrl(
                                                 Uri.parse(
-                                                  'https://drive.google.com/file/d/1s5lau_Ec6RzaIChNd-sFGsE5MCIsUhhe/view?usp=drive_link',
+                                                  'https://drive.google.com/file/d/1ioJPnGFcq7lSubciPurWyt6GMGrt95kZ/view',
                                                 ),
                                               );
                                               ;
                                             },
                                             child: Text(
-                                              'Resume   >',
+                                              'Resume  =>',
                                               style: TextStyle(
                                                 fontFamily: 'font',
 
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white,
-                                                fontSize: 20,
+                                                fontSize: 22,
                                               ),
                                             ),
                                           ),
@@ -481,8 +520,8 @@ class _PotfolioState extends State<Potfolio> {
                                             backgroundColor: Color(0xffFDEDCD),
                                             child: Image.asset(
                                               'assets/images/github.png',
-                                              height: 25,
-                                              width: 25,
+                                              height: 34,
+                                              width: 34,
                                             ),
                                           ),
                                         ),
@@ -511,8 +550,8 @@ class _PotfolioState extends State<Potfolio> {
                                             backgroundColor: Color(0xffFDEDCD),
                                             child: Image.asset(
                                               'assets/images/linke.png',
-                                              height: 150,
-                                              width: 150,
+                                              height: 110,
+                                              width: 110,
                                             ),
                                           ),
                                         ),
@@ -566,7 +605,7 @@ class _PotfolioState extends State<Potfolio> {
                                       'Hi There,',
                                       style: TextStyle(
                                         fontFamily: 'fonts',
-                                        fontSize: 25,
+                                        fontSize: 26,
                                       ),
                                     ),
                                   ],
@@ -577,7 +616,7 @@ class _PotfolioState extends State<Potfolio> {
                                     Text(
                                       "I'm ",
                                       style: TextStyle(
-                                        fontSize: 25,
+                                        fontSize: 26,
                                         fontFamily: 'fonts',
                                         // fontWeight: FontWeight.bold,
                                       ),
@@ -585,7 +624,7 @@ class _PotfolioState extends State<Potfolio> {
                                     Text(
                                       "Mühâmmâd",
                                       style: TextStyle(
-                                        fontSize: 25,
+                                        fontSize: 28,
                                         fontFamily: 'font',
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -593,7 +632,7 @@ class _PotfolioState extends State<Potfolio> {
                                     Text(
                                       ' Kåbëër',
                                       style: TextStyle(
-                                        fontSize: 25,
+                                        fontSize: 28,
                                         fontFamily: 'font',
                                         fontWeight: FontWeight.bold,
                                         color: Color(0xff7c2824),
@@ -608,17 +647,17 @@ class _PotfolioState extends State<Potfolio> {
                                       style: TextStyle(
                                         fontFamily: 'fonts',
 
-                                        fontSize: 25,
+                                        fontSize: 26,
                                         // fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     Text(
                                       "Flutter Development",
                                       style: TextStyle(
-                                        fontFamily: 'fonts',
+                                        fontFamily: 'font',
 
-                                        fontSize: 25,
-                                        // fontWeight: FontWeight.bold,
+                                        fontSize: 26,
+                                        fontWeight: FontWeight.bold,
                                         color: Color(0xff7c2824),
                                       ),
                                     ),
@@ -635,8 +674,8 @@ class _PotfolioState extends State<Potfolio> {
                                     children: [
                                       Container(
                                         // key: About,
-                                        height: 40,
-                                        width: 200,
+                                        height: 46,
+                                        width: 160,
                                         decoration: BoxDecoration(
                                           color: Color(0xff7c2824),
                                           borderRadius: BorderRadius.circular(
@@ -648,13 +687,13 @@ class _PotfolioState extends State<Potfolio> {
                                             onTap: () {
                                               launchUrl(
                                                 Uri.parse(
-                                                  'https://drive.google.com/file/d/1s5lau_Ec6RzaIChNd-sFGsE5MCIsUhhe/view?usp=drive_link',
+                                                  'https://drive.google.com/file/d/1ioJPnGFcq7lSubciPurWyt6GMGrt95kZ/view',
                                                 ),
                                               );
                                               ;
                                             },
                                             child: Text(
-                                              'Resume   >',
+                                              'Resume =>',
                                               style: TextStyle(
                                                 fontFamily: 'font',
 
@@ -672,7 +711,7 @@ class _PotfolioState extends State<Potfolio> {
                                 Padding(
                                   padding: EdgeInsets.only(
                                     top: size.height * 0.02,
-                                    left: size.width * 0.14,
+                                    left: size.width * 0.08,
                                   ),
                                   child: Row(
                                     crossAxisAlignment:
@@ -702,8 +741,8 @@ class _PotfolioState extends State<Potfolio> {
                                             backgroundColor: Color(0xffFDEDCD),
                                             child: Image.asset(
                                               'assets/images/github.png',
-                                              height: 25,
-                                              width: 25,
+                                              height: 34,
+                                              width: 34,
                                             ),
                                           ),
                                         ),
@@ -900,7 +939,7 @@ class _PotfolioState extends State<Potfolio> {
                                           Text(
                                             "I'm M.Kabeer",
                                             style: TextStyle(
-                                              fontFamily: 'fonts',
+                                              fontFamily: 'font',
 
                                               color: Color(0xffFDEDCD),
                                               fontSize: 20,
@@ -920,7 +959,7 @@ class _PotfolioState extends State<Potfolio> {
                                           Text(
                                             'Flutter Developer',
                                             style: TextStyle(
-                                              // fontFamily: 'fonts',
+                                              fontFamily: 'font',
                                               color: Color(0xffFDEDCD),
                                               fontSize: 15,
                                             ),
@@ -943,9 +982,9 @@ class _PotfolioState extends State<Potfolio> {
                                               'I am an enthusiastic and dedicated Flutter developer, starting my professional journey with a deep passion for mobile app development. As a fresher, I bring strong knowledge of Dart and Flutter, along with a curious mindset and the ability to quickly learn and adapt to new technologies. During my academic journey and personal projects, I have gained hands-on experience in building cross-platform mobile applications, implementing modern UI/UX principles, and ensuring smooth functionality across Android and iOS platforms. What excites me the most about Flutter is the flexibility and creativity it provides—I enjoy experimenting with widgets, animations, and layouts to bring ideas to life. I strongly believe in writing clean, maintainable, and scalable code, while also focusing on performance optimization to deliver a seamless user experience. In addition, I have explored integration with APIs, Firebase, and state management techniques, which has strengthened my practical knowledge. Beyond technical skills, I see myself as a problem-solver who thrives on challenges. I am committed to continuous growth, keeping up with the latest updates in Flutter and other mobile technologies. My career goal is to work on impactful projects, collaborate with talented teams, and contribute to applications that not only solve problems but also enhance people’s daily lives. With every project I undertake, I aim to sharpen my skills, embrace new learning opportunities, and establish myself as a creative and reliable Flutter developer in the tech industry.',
                                               style: TextStyle(
                                                 color: Colors.white,
-                                                // fontFamily: 'fonts',
-                                                // fontSize: 11,
-                                                fontWeight: FontWeight.normal,
+                                                fontFamily: 'font',
+                                                fontSize: 13,
+                                                // fontWeight: FontWeight.normal,
                                               ),
                                             ),
                                           ),
@@ -964,14 +1003,14 @@ class _PotfolioState extends State<Potfolio> {
                                             'Email : ',
                                             style: TextStyle(
                                               color: Color(0xffFDEDCD),
-                                              // fontFamily: 'fonts',
+                                              fontFamily: 'font',
                                             ),
                                           ),
                                           Text(
                                             'kabirmalik328@gmail.com',
                                             style: TextStyle(
                                               color: Colors.white,
-                                              // fontFamily: 'fonts',
+                                              fontFamily: 'font',
                                             ),
                                           ),
                                         ],
@@ -989,14 +1028,14 @@ class _PotfolioState extends State<Potfolio> {
                                             'Place : ',
                                             style: TextStyle(
                                               color: Color(0xffFDEDCD),
-                                              // fontFamily: 'fonts',
+                                              fontFamily: 'font',
                                             ),
                                           ),
                                           Text(
                                             'Lahore, Pakistan - 540000',
                                             style: TextStyle(
                                               color: Colors.white,
-                                              // fontFamily: 'fonts',
+                                              fontFamily: 'font',
                                             ),
                                           ),
                                         ],
@@ -1014,14 +1053,14 @@ class _PotfolioState extends State<Potfolio> {
                                             'Phone Number : ',
                                             style: TextStyle(
                                               color: Color(0xffFDEDCD),
-                                              // fontFamily: 'fonts',
+                                              fontFamily: 'font',
                                             ),
                                           ),
                                           Text(
                                             '+92 305-155-5866',
                                             style: TextStyle(
                                               color: Colors.white,
-                                              // fontFamily: 'fonts',
+                                              fontFamily: 'font',
                                             ),
                                           ),
                                         ],
@@ -1037,8 +1076,8 @@ class _PotfolioState extends State<Potfolio> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Container(
-                                            height: 40,
-                                            width: 110,
+                                            height: 44,
+                                            width: 120,
                                             decoration: BoxDecoration(
                                               color: Color(0xffFDEDCD),
                                               borderRadius:
@@ -1049,19 +1088,19 @@ class _PotfolioState extends State<Potfolio> {
                                                 onTap: () {
                                                   launchUrl(
                                                     Uri.parse(
-                                                      'https://drive.google.com/file/d/1s5lau_Ec6RzaIChNd-sFGsE5MCIsUhhe/view?usp=drive_link',
+                                                      'https://drive.google.com/file/d/1ioJPnGFcq7lSubciPurWyt6GMGrt95kZ/view',
                                                     ),
                                                   );
                                                   ;
                                                 },
                                                 child: Text(
-                                                  'Resume >',
+                                                  'Resume =>',
                                                   style: TextStyle(
                                                     fontFamily: 'font',
 
                                                     fontWeight: FontWeight.bold,
-                                                     color: Color(0xff7c2824),
-                                                    fontSize: 18,
+                                                    color: Color(0xff7c2824),
+                                                    fontSize: 16,
                                                   ),
                                                 ),
                                               ),
@@ -1078,333 +1117,338 @@ class _PotfolioState extends State<Potfolio> {
                         ),
                       ],
                     )
-                  : Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(top: size.height * 0.0),
-                          child: Container(
-                            key: About,
-                            height: 50,
-                            width: 180,
+                  : Padding(
+                    padding: EdgeInsets.only(top: size.height * 0.06),
+                    child: Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(top: size.height * 0.0),
+                            child: Container(
+                              key: About,
+                              height: 50,
+                              width: 180,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(20),
+                                ),
+                              ),
+                              // color: Color(0xffFDEDCD),
+                              child: Padding(
+                                padding: EdgeInsets.only(top: size.height * 0.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Icon(
+                                      Icons.person,
+                                      size: 30,
+                                      color: Color(0xff7c2824),
+                                    ),
+                                    SizedBox(width: size.width * 0.03),
+                                    Text(
+                                      'About',
+                                      style: TextStyle(
+                                        color: Color(0xff7c2824),
+                                        fontFamily: 'font',
+                    
+                                        fontSize: 30,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            // height: size.height * 0.,
+                            width: double.infinity,
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(20),
-                                topRight: Radius.circular(20),
-                              ),
+                              borderRadius: BorderRadius.circular(20),
                             ),
-                            // color: Color(0xffFDEDCD),
-                            child: Padding(
-                              padding: EdgeInsets.only(top: size.height * 0.0),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.person,
-                                    size: 30,
-                                    color: Color(0xff7c2824),
-                                  ),
-                                  SizedBox(width: size.width * 0.03),
-                                  Text(
-                                    'About',
-                                    style: TextStyle(
-                                      color: Color(0xff7c2824),
-                                      fontFamily: 'font',
-
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // height: size.height * 0.,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Column(
-                                // crossAxisAlignment: CrossAxisAlignment.center,
-                                // mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.only(
-                                      top: size.height * 0.02,
-                                    ),
-                                    child: Container(
-                                      height: size.height * 0.50,
-                                      width: size.height * 0.50,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(30),
-                                        color: Colors.blue,
-                                        image: DecorationImage(
-                                          image: AssetImage(
-                                            "assets/images/profile1.png",
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Column(
+                                  // crossAxisAlignment: CrossAxisAlignment.center,
+                                  // mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.only(
+                                        top: size.height * 0.02,
+                                      ),
+                                      child: Container(
+                                        height: size.height * 0.56,
+                                        width: size.height * 0.56,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(30),
+                                          color: Colors.blue,
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                              "assets/images/profile1.png",
+                                            ),
+                                            fit: BoxFit.cover,
                                           ),
-                                          fit: BoxFit.cover,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  Column(
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsets.only(
-                                          top: size.height * 0.02,
-                                          right: size.width * 0.02,
-                                          left: size.width * 0.02,
-                                          bottom: size.height * 0.02,
-                                        ),
-                                        child: Container(
-                                          // height: 580,
-                                          // width: 700,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xff7c2824),
-                                            borderRadius: BorderRadius.circular(
-                                              20,
-                                            ),
+                                    Column(
+                                      children: [
+                                        Padding(
+                                          padding: EdgeInsets.only(
+                                            top: size.height * 0.02,
+                                            right: size.width * 0.02,
+                                            left: size.width * 0.02,
+                                            bottom: size.height * 0.02,
                                           ),
-                                          child: Column(
-                                            children: [
-                                              // Row(
-                                              //   mainAxisAlignment: MainAxisAlignment.center,
-                                              //   children: [
-                                              //     Text(
-                                              //       'About Me',
-                                              //       style: TextStyle(
-                                              //         color: Color(0xffFDEDCD),
-                                              //         fontSize: 30,
-                                              //         fontWeight: FontWeight.bold,
-                                              //       ),
-                                              //     ),
-                                              //   ],
-                                              // ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  left: size.width * 0.03,
-                                                  right: size.width * 0.03,
-                                                  top: size.height * 0.01,
-                                                ),
-                                                child: Row(
-                                                  children: [
-                                                    Text(
-                                                      "I'm M.Kabeer",
-                                                      style: TextStyle(
-                                                        // fontFamily: 'fonts',
-                                                        color: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        fontSize: 16,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
+                                          child: Container(
+                                            // height: 580,
+                                            // width: 700,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xff7c2824),
+                                              borderRadius: BorderRadius.circular(
+                                                20,
                                               ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  left: size.width * 0.03,
-                                                  right: size.width * 0.03,
-                                                  top: size.height * 0.00,
-                                                ),
-                                                child: Row(
-                                                  children: [
-                                                    Text(
-                                                      'Flutter Developer',
-                                                      style: TextStyle(
-                                                        fontFamily: 'fonts',
-
-                                                        color: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        fontSize: 12,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Row(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Expanded(
-                                                    child: Padding(
-                                                      padding: EdgeInsets.only(
-                                                        left: size.width * 0.03,
-                                                        right:
-                                                            size.width * 0.03,
-                                                        top: size.height * 0.00,
-                                                      ),
-                                                      child: Text(
-                                                        'I am an enthusiastic and dedicated Flutter developer, starting my professional journey with a deep passion for mobile app development. During my academic journey and personal projects, I have gained hands-on experience in building cross-platform mobile applications, implementing modern UI/UX principles, and ensuring smooth functionality across Android and iOS platforms. What excites me the most about Flutter is the flexibility and creativity it provides—I enjoy experimenting with widgets, animations, and layouts to bring ideas to life. I strongly believe in writing clean, maintainable, and scalable code, while also focusing on performance optimization to deliver a seamless user experience. In addition, I have explored integration with APIs, Firebase, and state management techniques, which has strengthened my practical knowledge. Beyond technical skills, I see myself as a problem-solver who thrives on challenges. I am committed to continuous growth, keeping up with the latest updates in Flutter and other mobile technologies. My career goal is to work on impactful projects, collaborate with talented teams, and contribute to applications that not only solve problems but also enhance people’s daily lives. With every project I undertake, I aim to sharpen my skills, embrace new learning opportunities, and establish myself as a creative and reliable Flutter developer in the tech industry.',
-                                                        style: TextStyle(
-                                                          color: Colors.white,
-                                                          // fontFamily: 'fonts',
-                                                          fontSize: 10,
-                                                        ),
-                                                      ),
-                                                    ),
+                                            ),
+                                            child: Column(
+                                              children: [
+                                                // Row(
+                                                //   mainAxisAlignment: MainAxisAlignment.center,
+                                                //   children: [
+                                                //     Text(
+                                                //       'About Me',
+                                                //       style: TextStyle(
+                                                //         color: Color(0xffFDEDCD),
+                                                //         fontSize: 30,
+                                                //         fontWeight: FontWeight.bold,
+                                                //       ),
+                                                //     ),
+                                                //   ],
+                                                // ),
+                                                Padding(
+                                                  padding: EdgeInsets.only(
+                                                    left: size.width * 0.03,
+                                                    right: size.width * 0.03,
+                                                    top: size.height * 0.01,
                                                   ),
-                                                ],
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  left: size.width * 0.03,
-                                                  right: size.width * 0.03,
-                                                  top: size.height * 0.00,
-                                                ),
-                                                child: Row(
-                                                  children: [
-                                                    Text(
-                                                      'Email : ',
-                                                      style: TextStyle(
-                                                        color: Color(
-                                                          0xffFDEDCD,
+                                                  child: Row(
+                                                    children: [
+                                                      Text(
+                                                        "I'm M.Kabeer",
+                                                        style: TextStyle(
+                                                          fontFamily: 'font',
+                                                          color: Color(
+                                                            0xffFDEDCD,
+                                                          ),
+                                                          fontSize: 16,
                                                         ),
-                                                        // fontFamily: 'fonts',
-                                                        fontSize: 12,
                                                       ),
-                                                    ),
-                                                    Text(
-                                                      'kabirmalik328@gmail.com',
-                                                      style: TextStyle(
-                                                        color: Colors.white,
-                                                        fontSize: 10,
-                                                        // fontFamily: 'fonts',
-                                                      ),
-                                                    ),
-                                                  ],
+                                                    ],
+                                                  ),
                                                 ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  left: size.width * 0.03,
-                                                  right: size.width * 0.03,
-                                                  top: size.height * 0.00,
-                                                ),
-                                                child: Row(
-                                                  children: [
-                                                    Text(
-                                                      'Place : ',
-                                                      style: TextStyle(
-                                                        color: Color(
-                                                          0xffFDEDCD,
+                                                Padding(
+                                                  padding: EdgeInsets.only(
+                                                    left: size.width * 0.03,
+                                                    right: size.width * 0.03,
+                                                    top: size.height * 0.00,
+                                                  ),
+                                                  child: Row(
+                                                    children: [
+                                                      Text(
+                                                        'Flutter Developer',
+                                                        style: TextStyle(
+                                                          fontFamily: 'font',
+                    
+                                                          color: Color(
+                                                            0xffFDEDCD,
+                                                          ),
+                                                          fontSize: 12,
                                                         ),
-                                                        // fontFamily: 'fonts',
-                                                        fontSize: 12,
                                                       ),
-                                                    ),
-                                                    Text(
-                                                      'Lahore, Pakistan - 540000',
-                                                      style: TextStyle(
-                                                        color: Colors.white,
-                                                        // fontFamily: 'fonts',
-                                                        fontSize: 10,
-                                                      ),
-                                                    ),
-                                                  ],
+                                                    ],
+                                                  ),
                                                 ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  left: size.width * 0.03,
-                                                  right: size.width * 0.03,
-                                                  top: size.height * 0.00,
-                                                ),
-                                                child: Row(
-                                                  children: [
-                                                    Text(
-                                                      'Phone Number : ',
-                                                      style: TextStyle(
-                                                        color: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        // fontFamily: 'fonts',
-                                                        fontSize: 12,
-                                                      ),
-                                                    ),
-                                                    Text(
-                                                      '+92 305-155-5866',
-                                                      style: TextStyle(
-                                                        color: Colors.white,
-                                                        // fontFamily: 'fonts',
-                                                        fontSize: 10,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  top: size.height * 0.01,
-                                                  left: size.width * 0.03,
-                                                  bottom: size.height * 0.02,
-                                                ),
-                                                child: Row(
+                                                Row(
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
-                                                      height:
-                                                          size.height * 0.05,
-                                                      width: size.width * 0.25,
-                                                      decoration: BoxDecoration(
-                                                        color: Color(
-                                                          0xffFDEDCD,
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding: EdgeInsets.only(
+                                                          left: size.width * 0.03,
+                                                          right:
+                                                              size.width * 0.03,
+                                                          top: size.height * 0.00,
                                                         ),
-                                                        borderRadius:
-                                                            BorderRadius.circular(
-                                                              40,
-                                                            ),
-                                                      ),
-                                                      child: Center(
-                                                        child: InkWell(
-                                                          onTap: () {
-                                                            launchUrl(
-                                                              Uri.parse(
-                                                                'https://drive.google.com/file/d/1s5lau_Ec6RzaIChNd-sFGsE5MCIsUhhe/view?usp=drive_link',
-                                                              ),
-                                                            );
-                                                            ;
-                                                          },
-                                                          child: Text(
-                                                            'Resume >',
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'font',
-
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                               color: Color(0xff7c2824),
-                                                              fontSize: 18,
-                                                            ),
+                                                        child: Text(
+                                                          'I am an enthusiastic and dedicated Flutter developer, starting my professional journey with a deep passion for mobile app development. During my academic journey and personal projects, I have gained hands-on experience in building cross-platform mobile applications, implementing modern UI/UX principles, and ensuring smooth functionality across Android and iOS platforms. What excites me the most about Flutter is the flexibility and creativity it provides—I enjoy experimenting with widgets, animations, and layouts to bring ideas to life. I strongly believe in writing clean, maintainable, and scalable code, while also focusing on performance optimization to deliver a seamless user experience. In addition, I have explored integration with APIs, Firebase, and state management techniques, which has strengthened my practical knowledge. Beyond technical skills, I see myself as a problem-solver who thrives on challenges. I am committed to continuous growth, keeping up with the latest updates in Flutter and other mobile technologies. My career goal is to work on impactful projects, collaborate with talented teams, and contribute to applications that not only solve problems but also enhance people’s daily lives. With every project I undertake, I aim to sharpen my skills, embrace new learning opportunities, and establish myself as a creative and reliable Flutter developer in the tech industry.',
+                                                          style: TextStyle(
+                                                            color: Colors.white,
+                                                            fontFamily: 'font',
+                                                            fontSize: 10,
                                                           ),
                                                         ),
                                                       ),
                                                     ),
                                                   ],
                                                 ),
-                                              ),
-                                            ],
+                                                Padding(
+                                                  padding: EdgeInsets.only(
+                                                    left: size.width * 0.03,
+                                                    right: size.width * 0.03,
+                                                    top: size.height * 0.00,
+                                                  ),
+                                                  child: Row(
+                                                    children: [
+                                                      Text(
+                                                        'Email : ',
+                                                        style: TextStyle(
+                                                          color: Color(
+                                                            0xffFDEDCD,
+                                                          ),
+                                                          fontFamily: 'font',
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
+                                                      Text(
+                                                        'kabirmalik328@gmail.com',
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontSize: 10,
+                                                          fontFamily: 'font',
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsets.only(
+                                                    left: size.width * 0.03,
+                                                    right: size.width * 0.03,
+                                                    top: size.height * 0.00,
+                                                  ),
+                                                  child: Row(
+                                                    children: [
+                                                      Text(
+                                                        'Place : ',
+                                                        style: TextStyle(
+                                                          color: Color(
+                                                            0xffFDEDCD,
+                                                          ),
+                                                          fontFamily: 'font',
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
+                                                      Text(
+                                                        'Lahore, Pakistan - 540000',
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontFamily: 'font',
+                                                          fontSize: 10,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsets.only(
+                                                    left: size.width * 0.03,
+                                                    right: size.width * 0.03,
+                                                    top: size.height * 0.00,
+                                                  ),
+                                                  child: Row(
+                                                    children: [
+                                                      Text(
+                                                        'Phone Number : ',
+                                                        style: TextStyle(
+                                                          color: Color(
+                                                            0xffFDEDCD,
+                                                          ),
+                                                          fontFamily: 'font',
+                                                          fontSize: 12,
+                                                        ),
+                                                      ),
+                                                      Text(
+                                                        '+92 305-155-5866',
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontFamily: 'font',
+                                                          fontSize: 10,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsets.only(
+                                                    top: size.height * 0.01,
+                                                    left: size.width * 0.03,
+                                                    bottom: size.height * 0.02,
+                                                  ),
+                                                  child: Row(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment.start,
+                                                    children: [
+                                                      Container(
+                                                        height:
+                                                            size.height * 0.05,
+                                                        width: size.width * 0.25,
+                                                        decoration: BoxDecoration(
+                                                          color: Color(
+                                                            0xffFDEDCD,
+                                                          ),
+                                                          borderRadius:
+                                                              BorderRadius.circular(
+                                                                40,
+                                                              ),
+                                                        ),
+                                                        child: Center(
+                                                          child: InkWell(
+                                                            onTap: () {
+                                                              launchUrl(
+                                                                Uri.parse(
+                                                                  'https://drive.google.com/file/d/1ioJPnGFcq7lSubciPurWyt6GMGrt95kZ/view',
+                                                                ),
+                                                              );
+                                                              ;
+                                                            },
+                                                            child: Text(
+                                                              'Resume =>',
+                                                              style: TextStyle(
+                                                                fontFamily:
+                                                                    'font',
+                    
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                                color: Color(
+                                                                  0xff7c2824,
+                                                                ),
+                                                                fontSize: 14,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ],
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
+                        ],
+                      ),
+                  ),
             ),
 
             Container(
@@ -1453,8 +1497,8 @@ class _PotfolioState extends State<Potfolio> {
                           child: Column(
                             children: [
                               Container(
-                                height: 650,
-                                width: 1210,
+                                height: 600,
+                                width: 1100,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(20),
@@ -1463,299 +1507,585 @@ class _PotfolioState extends State<Potfolio> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Container(
-                                      height: 600,
-                                      width: 1110,
+                                      height: 500,
+                                      width: 1000,
                                       decoration: BoxDecoration(
                                         color: Color(
                                           0xff7c2824,
                                         ).withOpacity(0.8),
                                         borderRadius: BorderRadius.circular(20),
                                       ),
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        children: [
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  top: size.height * 0.06,
-                                                ),
-                                                child: Container(
-                                                  height: 140,
-                                                  width: 140,
+                                      child: Center(
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Container(
+                                                  height: 400,
+                                                  width: 900,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0xffFDEDCD),
+                                                    color: Colors.white,
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                           20,
                                                         ),
                                                   ),
-                                                  child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      CircleAvatar(
-                                                        radius: 30,
-                                                        backgroundColor: Color(
-                                                          0xffFDEDCD,
+                                                  child: Center(
+                                                    child: Column(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .center,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Row(
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .center,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            Padding(
+                                                              padding: EdgeInsets.only(
+                                                                top:
+                                                                    size.height *
+                                                                    0.04,
+                                                                // left: size.height * 0.04,
+                                                              ),
+                                                              child: Container(
+                                                                height: 140,
+                                                                width: 140,
+                                                                decoration: BoxDecoration(
+                                                                  color: Color(
+                                                                    0xffFDEDCD,
+                                                                  ),
+                                                                  borderRadius:
+                                                                      BorderRadius.circular(
+                                                                        20,
+                                                                      ),
+                                                                ),
+                                                                child: Column(
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    CircleAvatar(
+                                                                      radius:
+                                                                          28,
+                                                                      backgroundColor:
+                                                                          Color(
+                                                                            0xffFDEDCD,
+                                                                          ),
+                                                                      child: Image.asset(
+                                                                        'assets/images/flutter.png',
+                                                                        height:
+                                                                            60,
+                                                                        width:
+                                                                            60,
+                                                                      ),
+                                                                    ),
+                                                                    SizedBox(
+                                                                      height:
+                                                                          size.height *
+                                                                          0.02,
+                                                                    ),
+                                                                    const Text(
+                                                                      "Flutter",
+                                                                      style: TextStyle(
+                                                                        fontFamily:
+                                                                            'fonts',
+                                                                        color: Color(
+                                                                          0xff7c2824,
+                                                                        ),
+                                                                        fontSize:
+                                                                            14,
+                                                                        fontWeight:
+                                                                            FontWeight.w500,
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                            Padding(
+                                                              padding: EdgeInsets.only(
+                                                                top:
+                                                                    size.height *
+                                                                    0.04,
+                                                                left:
+                                                                    size.width *
+                                                                    0.02,
+                                                              ),
+                                                              child: Container(
+                                                                height: 140,
+                                                                width: 140,
+                                                                decoration: BoxDecoration(
+                                                                  color: Color(
+                                                                    0xffFDEDCD,
+                                                                  ),
+                                                                  borderRadius:
+                                                                      BorderRadius.circular(
+                                                                        20,
+                                                                      ),
+                                                                ),
+                                                                child: Column(
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    CircleAvatar(
+                                                                      radius:
+                                                                          30,
+                                                                      backgroundColor:
+                                                                          Color(
+                                                                            0xffFDEDCD,
+                                                                          ),
+                                                                      child: Image.asset(
+                                                                        'assets/images/git.png',
+                                                                        height:
+                                                                            60,
+                                                                        width:
+                                                                            60,
+                                                                      ),
+                                                                    ),
+                                                                    SizedBox(
+                                                                      height:
+                                                                          size.height *
+                                                                          0.02,
+                                                                    ),
+                                                                    const Text(
+                                                                      "Git",
+                                                                      style: TextStyle(
+                                                                        fontFamily:
+                                                                            'fonts',
+                                                                        color: Color(
+                                                                          0xff7c2824,
+                                                                        ),
+                                                                        fontSize:
+                                                                            14,
+                                                                        fontWeight:
+                                                                            FontWeight.w500,
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                            Padding(
+                                                              padding: EdgeInsets.only(
+                                                                top:
+                                                                    size.height *
+                                                                    0.04,
+                                                                left:
+                                                                    size.width *
+                                                                    0.02,
+                                                              ),
+                                                              child: Container(
+                                                                height: 140,
+                                                                width: 140,
+                                                                decoration: BoxDecoration(
+                                                                  color: Color(
+                                                                    0xffFDEDCD,
+                                                                  ),
+                                                                  borderRadius:
+                                                                      BorderRadius.circular(
+                                                                        20,
+                                                                      ),
+                                                                ),
+                                                                child: Column(
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    CircleAvatar(
+                                                                      radius:
+                                                                          28,
+                                                                      backgroundColor:
+                                                                          Color(
+                                                                            0xffFDEDCD,
+                                                                          ),
+                                                                      child: Image.asset(
+                                                                        'assets/images/gitHub.png',
+                                                                        height:
+                                                                            60,
+                                                                        width:
+                                                                            60,
+                                                                      ),
+                                                                    ),
+                                                                    SizedBox(
+                                                                      height:
+                                                                          size.height *
+                                                                          0.02,
+                                                                    ),
+                                                                    const Text(
+                                                                      "GitHub",
+                                                                      style: TextStyle(
+                                                                        fontFamily:
+                                                                            'fonts',
+                                                                        color: Color(
+                                                                          0xff7c2824,
+                                                                        ),
+                                                                        fontSize:
+                                                                            14,
+                                                                        fontWeight:
+                                                                            FontWeight.w500,
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                            Padding(
+                                                              padding: EdgeInsets.only(
+                                                                top:
+                                                                    size.height *
+                                                                    0.04,
+                                                                left:
+                                                                    size.width *
+                                                                    0.02,
+                                                              ),
+                                                              child: Container(
+                                                                height: 140,
+                                                                width: 140,
+                                                                decoration: BoxDecoration(
+                                                                  color: Color(
+                                                                    0xffFDEDCD,
+                                                                  ),
+                                                                  borderRadius:
+                                                                      BorderRadius.circular(
+                                                                        20,
+                                                                      ),
+                                                                ),
+                                                                child: Column(
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    CircleAvatar(
+                                                                      radius:
+                                                                          28,
+                                                                      backgroundColor:
+                                                                          Color(
+                                                                            0xffFDEDCD,
+                                                                          ),
+                                                                      child: Image.asset(
+                                                                        'assets/images/postman.png',
+                                                                        height:
+                                                                            60,
+                                                                        width:
+                                                                            60,
+                                                                      ),
+                                                                    ),
+                                                                    SizedBox(
+                                                                      height:
+                                                                          size.height *
+                                                                          0.02,
+                                                                    ),
+                                                                    const Text(
+                                                                      "Postman",
+                                                                      style: TextStyle(
+                                                                        fontFamily:
+                                                                            'fonts',
+                                                                        color: Color(
+                                                                          0xff7c2824,
+                                                                        ),
+                                                                        fontSize:
+                                                                            14,
+                                                                        fontWeight:
+                                                                            FontWeight.w500,
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ],
                                                         ),
-                                                        child: Image.asset(
-                                                          'assets/images/github.png',
-                                                          height: 60,
-                                                          width: 60,
+                                                        Padding(
+                                                          padding:
+                                                              EdgeInsets.only(
+                                                                bottom:
+                                                                    size.height *
+                                                                    0.04,
+                                                                top:
+                                                                    size.height *
+                                                                    0.04,
+                                                              ),
+                                                          child: Row(
+                                                            mainAxisAlignment:
+                                                                MainAxisAlignment
+                                                                    .center,
+                                                            crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .center,
+                                                            children: [
+                                                              Padding(
+                                                                padding: EdgeInsets.only(
+                                                                  top:
+                                                                      size.height *
+                                                                      0.04,
+
+                                                                  // left: size.width * 0.02,
+                                                                ),
+                                                                child: Container(
+                                                                  height: 140,
+                                                                  width: 140,
+                                                                  decoration: BoxDecoration(
+                                                                    color: Color(
+                                                                      0xffFDEDCD,
+                                                                    ),
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                          20,
+                                                                        ),
+                                                                  ),
+                                                                  child: Column(
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .center,
+                                                                    children: [
+                                                                      CircleAvatar(
+                                                                        radius:
+                                                                            32,
+                                                                        backgroundColor:
+                                                                            Color(
+                                                                              0xffFDEDCD,
+                                                                            ),
+                                                                        child: Image.asset(
+                                                                          'assets/images/html.png',
+                                                                          height:
+                                                                              68,
+                                                                          width:
+                                                                              68,
+                                                                        ),
+                                                                      ),
+                                                                      SizedBox(
+                                                                        height:
+                                                                            size.height *
+                                                                            0.01,
+                                                                      ),
+                                                                      const Text(
+                                                                        "Html",
+                                                                        style: TextStyle(
+                                                                          fontSize:
+                                                                              14,
+                                                                          color: Color(
+                                                                            0xff7c2824,
+                                                                          ),
+                                                                          fontFamily:
+                                                                              'fonts',
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Padding(
+                                                                padding: EdgeInsets.only(
+                                                                  top:
+                                                                      size.height *
+                                                                      0.04,
+                                                                  left:
+                                                                      size.width *
+                                                                      0.02,
+                                                                ),
+                                                                child: Container(
+                                                                  height: 140,
+                                                                  width: 140,
+                                                                  decoration: BoxDecoration(
+                                                                    color: Color(
+                                                                      0xffFDEDCD,
+                                                                    ),
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                          20,
+                                                                        ),
+                                                                  ),
+                                                                  child: Column(
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .center,
+                                                                    children: [
+                                                                      CircleAvatar(
+                                                                        radius:
+                                                                            30,
+                                                                        backgroundColor:
+                                                                            Color(
+                                                                              0xffFDEDCD,
+                                                                            ),
+                                                                        child: Image.asset(
+                                                                          'assets/images/java.png',
+                                                                          height:
+                                                                              55,
+                                                                          width:
+                                                                              55,
+                                                                        ),
+                                                                      ),
+                                                                      SizedBox(
+                                                                        height:
+                                                                            size.height *
+                                                                            0.01,
+                                                                      ),
+                                                                      const Text(
+                                                                        "java",
+
+                                                                        style: TextStyle(
+                                                                          fontFamily:
+                                                                              'fonts',
+                                                                          color: Color(
+                                                                            0xff7c2824,
+                                                                          ),
+                                                                          fontSize:
+                                                                              14,
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+
+                                                              Padding(
+                                                                padding: EdgeInsets.only(
+                                                                  top:
+                                                                      size.height *
+                                                                      0.04,
+                                                                  left:
+                                                                      size.width *
+                                                                      0.02,
+                                                                ),
+                                                                child: Container(
+                                                                  height: 140,
+                                                                  width: 140,
+                                                                  decoration: BoxDecoration(
+                                                                    color: Color(
+                                                                      0xffFDEDCD,
+                                                                    ),
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                          20,
+                                                                        ),
+                                                                  ),
+                                                                  child: Column(
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .center,
+                                                                    children: [
+                                                                      CircleAvatar(
+                                                                        radius:
+                                                                            30,
+                                                                        backgroundColor:
+                                                                            Color(
+                                                                              0xffFDEDCD,
+                                                                            ),
+                                                                        child: Image.asset(
+                                                                          'assets/images/css.png',
+                                                                          height:
+                                                                              50,
+                                                                          width:
+                                                                              50,
+                                                                        ),
+                                                                      ),
+                                                                      SizedBox(
+                                                                        height:
+                                                                            size.height *
+                                                                            0.01,
+                                                                      ),
+                                                                      const Text(
+                                                                        "CSS",
+                                                                        style: TextStyle(
+                                                                          fontSize:
+                                                                              14,
+                                                                          fontFamily:
+                                                                              'fonts',
+                                                                          color: Color(
+                                                                            0xff7c2824,
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Padding(
+                                                                padding: EdgeInsets.only(
+                                                                  top:
+                                                                      size.height *
+                                                                      0.04,
+
+                                                                  // bottom: size.height * 0.02,
+                                                                  left:
+                                                                      size.width *
+                                                                      0.02,
+                                                                ),
+                                                                child: Container(
+                                                                  height: 140,
+                                                                  width: 140,
+                                                                  decoration: BoxDecoration(
+                                                                    color: Color(
+                                                                      0xffFDEDCD,
+                                                                    ),
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                          20,
+                                                                        ),
+                                                                  ),
+                                                                  child: Column(
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .center,
+                                                                    children: [
+                                                                      Column(
+                                                                        children: [
+                                                                          CircleAvatar(
+                                                                            radius:
+                                                                                40,
+                                                                            backgroundColor:
+                                                                                Colors.white,
+
+                                                                            child: Image.asset(
+                                                                              'assets/images/canva.png',
+                                                                              height: 260,
+                                                                              width: 260,
+                                                                            ),
+                                                                          ),
+                                                                          Text(
+                                                                            'Canva',
+                                                                            style: TextStyle(
+                                                                              fontFamily: 'fonts',
+                                                                              color: Color(
+                                                                                0xff7c2824,
+                                                                              ),
+                                                                              fontSize: 14,
+                                                                              fontWeight: FontWeight.w500,
+                                                                            ),
+                                                                          ),
+                                                                        ],
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ],
+                                                          ),
                                                         ),
-                                                      ),
-                                                      const SizedBox(height: 5),
-                                                      const Text(
-                                                        "GitHub",
-                                                        style: TextStyle(
-                                                          fontFamily: 'fonts',
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  top: size.height * 0.06,
-                                                  left: size.width * 0.04,
-                                                ),
-                                                child: Container(
-                                                  height: 140,
-                                                  width: 140,
-                                                  decoration: BoxDecoration(
-                                                    color: Color(0xffFDEDCD),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                          20,
-                                                        ),
-                                                  ),
-                                                  child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      CircleAvatar(
-                                                        radius: 30,
-                                                        backgroundColor: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        child: Image.asset(
-                                                          'assets/images/flutter.png',
-                                                          height: 60,
-                                                          width: 60,
-                                                        ),
-                                                      ),
-                                                      const SizedBox(height: 5),
-                                                      const Text(
-                                                        "Flutter",
-                                                        style: TextStyle(
-                                                          fontFamily: 'fonts',
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  top: size.height * 0.06,
-                                                  left: size.width * 0.04,
-                                                ),
-                                                child: Container(
-                                                  height: 140,
-                                                  width: 140,
-                                                  decoration: BoxDecoration(
-                                                    color: Color(0xffFDEDCD),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                          20,
-                                                        ),
-                                                  ),
-                                                  child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      CircleAvatar(
-                                                        radius: 30,
-                                                        backgroundColor: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        child: Image.asset(
-                                                          'assets/images/java.png',
-                                                          height: 60,
-                                                          width: 60,
-                                                        ),
-                                                      ),
-                                                      const SizedBox(height: 5),
-                                                      const Text(
-                                                        "Java",
-                                                        style: TextStyle(
-                                                          fontSize: 14,
-                                                          fontFamily: 'fonts',
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  top: size.height * 0.06,
-                                                  left: size.width * 0.04,
-                                                ),
-                                                child: Container(
-                                                  height: 140,
-                                                  width: 140,
-                                                  decoration: BoxDecoration(
-                                                    color: Color(0xffFDEDCD),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                          20,
-                                                        ),
-                                                  ),
-                                                  child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      CircleAvatar(
-                                                        radius: 40,
-                                                        backgroundColor: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        child: Image.asset(
-                                                          'assets/images/html.png',
-                                                          height: 80,
-                                                          width: 80,
-                                                        ),
-                                                      ),
-                                                      const SizedBox(height: 5),
-                                                      const Text(
-                                                        "Html",
-                                                        style: TextStyle(
-                                                          fontFamily: 'fonts',
-                                                          fontSize: 14,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  top: size.height * 0.06,
-                                                  left: size.width * 0.04,
-                                                ),
-                                                child: Container(
-                                                  height: 140,
-                                                  width: 140,
-                                                  decoration: BoxDecoration(
-                                                    color: Color(0xffFDEDCD),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                          20,
-                                                        ),
-                                                  ),
-                                                  child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      CircleAvatar(
-                                                        radius: 30,
-                                                        backgroundColor: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        child: Image.asset(
-                                                          'assets/images/css.png',
-                                                          height: 60,
-                                                          width: 60,
-                                                        ),
-                                                      ),
-                                                      const SizedBox(height: 5),
-                                                      const Text(
-                                                        "CSS",
-                                                        style: TextStyle(
-                                                          fontSize: 14,
-                                                          fontFamily: 'fonts',
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  top: size.height * 0.06,
-                                                  left: size.width * 0.00,
-                                                ),
-                                                child: Container(
-                                                  height: 350,
-                                                  width: 360,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      image: AssetImage(
-                                                        'assets/images/post.png',
-                                                      ),
-                                                      fit: BoxFit.cover,
+                                                      ],
                                                     ),
-                                                    color: Color(0xffFDEDCD),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                          20,
-                                                        ),
                                                   ),
                                                 ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  top: size.height * 0.06,
-                                                  left: size.width * 0.04,
-                                                ),
-                                                child: Container(
-                                                  height: 350,
-                                                  width: 360,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      image: AssetImage(
-                                                        'assets/images/posts.png',
-                                                      ),
-                                                      fit: BoxFit.cover,
-                                                    ),
-                                                    color: Color(0xffFDEDCD),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                          20,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ],
+                                              ],
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -1884,61 +2214,7 @@ class _PotfolioState extends State<Potfolio> {
                                                                 .center,
                                                         children: [
                                                           CircleAvatar(
-                                                            radius: 30,
-                                                            backgroundColor:
-                                                                Color(
-                                                                  0xffFDEDCD,
-                                                                ),
-                                                            child: Image.asset(
-                                                              'assets/images/github.png',
-                                                              height: 60,
-                                                              width: 60,
-                                                            ),
-                                                          ),
-                                                          SizedBox(
-                                                            width:
-                                                                size.width *
-                                                                0.02,
-                                                          ),
-                                                          const Text(
-                                                            "GitHub",
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'fonts',
-                                                              fontSize: 14,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  Padding(
-                                                    padding: EdgeInsets.only(
-                                                      top: size.height * 0.04,
-                                                      left: size.width * 0.04,
-                                                    ),
-                                                    child: Container(
-                                                      height: 140,
-                                                      width: 140,
-                                                      decoration: BoxDecoration(
-                                                        color: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        borderRadius:
-                                                            BorderRadius.circular(
-                                                              20,
-                                                            ),
-                                                      ),
-                                                      child: Column(
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .center,
-                                                        children: [
-                                                          CircleAvatar(
-                                                            radius: 30,
+                                                            radius: 28,
                                                             backgroundColor:
                                                                 Color(
                                                                   0xffFDEDCD,
@@ -1950,8 +2226,8 @@ class _PotfolioState extends State<Potfolio> {
                                                             ),
                                                           ),
                                                           SizedBox(
-                                                            width:
-                                                                size.width *
+                                                            height:
+                                                                size.height *
                                                                 0.02,
                                                           ),
                                                           const Text(
@@ -1998,22 +2274,79 @@ class _PotfolioState extends State<Potfolio> {
                                                                   0xffFDEDCD,
                                                                 ),
                                                             child: Image.asset(
-                                                              'assets/images/java.png',
+                                                              'assets/images/git.png',
                                                               height: 60,
                                                               width: 60,
                                                             ),
                                                           ),
                                                           SizedBox(
-                                                            width:
-                                                                size.width *
+                                                            height:
+                                                                size.height *
                                                                 0.02,
                                                           ),
                                                           const Text(
-                                                            "Java",
+                                                            "Git",
                                                             style: TextStyle(
-                                                              fontSize: 14,
                                                               fontFamily:
                                                                   'fonts',
+                                                              fontSize: 14,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                      top: size.height * 0.04,
+                                                      // left: size.width * 0.04,
+                                                    ),
+                                                    child: Container(
+                                                      height: 140,
+                                                      width: 140,
+                                                      decoration: BoxDecoration(
+                                                        color: Color(
+                                                          0xffFDEDCD,
+                                                        ),
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                              20,
+                                                            ),
+                                                      ),
+                                                      child: Column(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        children: [
+                                                          CircleAvatar(
+                                                            radius: 28,
+                                                            backgroundColor:
+                                                                Color(
+                                                                  0xffFDEDCD,
+                                                                ),
+                                                            child: Image.asset(
+                                                              'assets/images/gitHub.png',
+                                                              height: 60,
+                                                              width: 60,
+                                                            ),
+                                                          ),
+                                                          SizedBox(
+                                                            height:
+                                                                size.height *
+                                                                0.02,
+                                                          ),
+                                                          const Text(
+                                                            "GitHub",
+                                                            style: TextStyle(
+                                                              fontFamily:
+                                                                  'fonts',
+                                                              fontSize: 14,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
                                                             ),
                                                           ),
                                                         ],
@@ -2043,28 +2376,83 @@ class _PotfolioState extends State<Potfolio> {
                                                                 .center,
                                                         children: [
                                                           CircleAvatar(
-                                                            radius: 40,
+                                                            radius: 28,
+                                                            backgroundColor:
+                                                                Color(
+                                                                  0xffFDEDCD,
+                                                                ),
+                                                            child: Image.asset(
+                                                              'assets/images/postman.png',
+                                                              height: 60,
+                                                              width: 60,
+                                                            ),
+                                                          ),
+                                                          SizedBox(
+                                                            height:
+                                                                size.height *
+                                                                0.02,
+                                                          ),
+                                                          const Text(
+                                                            "Postman",
+                                                            style: TextStyle(
+                                                              fontFamily:
+                                                                  'fonts',
+                                                              fontSize: 14,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
+
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                      top: size.height * 0.04,
+                                                      // left: size.width * 0.04,
+                                                    ),
+                                                    child: Container(
+                                                      height: 140,
+                                                      width: 140,
+                                                      decoration: BoxDecoration(
+                                                        color: Color(
+                                                          0xffFDEDCD,
+                                                        ),
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                              20,
+                                                            ),
+                                                      ),
+                                                      child: Column(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        children: [
+                                                          CircleAvatar(
+                                                            radius: 32,
                                                             backgroundColor:
                                                                 Color(
                                                                   0xffFDEDCD,
                                                                 ),
                                                             child: Image.asset(
                                                               'assets/images/html.png',
-                                                              height: 80,
-                                                              width: 80,
+                                                              height: 68,
+                                                              width: 68,
                                                             ),
                                                           ),
                                                           SizedBox(
-                                                            width:
-                                                                size.width *
-                                                                0.02,
+                                                            height:
+                                                                size.height *
+                                                                0.01,
                                                           ),
                                                           const Text(
                                                             "Html",
                                                             style: TextStyle(
+                                                              fontSize: 14,
                                                               fontFamily:
                                                                   'fonts',
-                                                              fontSize: 14,
                                                             ),
                                                           ),
                                                         ],
@@ -2100,15 +2488,67 @@ class _PotfolioState extends State<Potfolio> {
                                                                   0xffFDEDCD,
                                                                 ),
                                                             child: Image.asset(
-                                                              'assets/images/css.png',
-                                                              height: 60,
-                                                              width: 60,
+                                                              'assets/images/java.png',
+                                                              height: 55,
+                                                              width: 55,
                                                             ),
                                                           ),
                                                           SizedBox(
-                                                            width:
-                                                                size.width *
-                                                                0.02,
+                                                            height:
+                                                                size.height *
+                                                                0.01,
+                                                          ),
+                                                          const Text(
+                                                            "java",
+                                                            style: TextStyle(
+                                                              fontFamily:
+                                                                  'fonts',
+                                                              fontSize: 14,
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
+
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                      top: size.height * 0.04,
+                                                      // left: size.width * 0.04,
+                                                    ),
+                                                    child: Container(
+                                                      height: 140,
+                                                      width: 140,
+                                                      decoration: BoxDecoration(
+                                                        color: Color(
+                                                          0xffFDEDCD,
+                                                        ),
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                              20,
+                                                            ),
+                                                      ),
+                                                      child: Column(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        children: [
+                                                          CircleAvatar(
+                                                            radius: 30,
+                                                            backgroundColor:
+                                                                Color(
+                                                                  0xffFDEDCD,
+                                                                ),
+                                                            child: Image.asset(
+                                                              'assets/images/css.png',
+                                                              height: 50,
+                                                              width: 50,
+                                                            ),
+                                                          ),
+                                                          SizedBox(
+                                                            height:
+                                                                size.height *
+                                                                0.01,
                                                           ),
                                                           const Text(
                                                             "CSS",
@@ -2122,30 +2562,18 @@ class _PotfolioState extends State<Potfolio> {
                                                       ),
                                                     ),
                                                   ),
-                                                ],
-                                              ),
-                                              Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
                                                   Padding(
                                                     padding: EdgeInsets.only(
                                                       top: size.height * 0.04,
-                                                      left: size.width * 0.00,
-                                                      bottom: size.width * 0.04,
+                                                      bottom:
+                                                          size.height * 0.04,
+
+                                                      left: size.width * 0.04,
                                                     ),
                                                     child: Container(
-                                                      height: 150,
-                                                      width: 150,
+                                                      height: 140,
+                                                      width: 140,
                                                       decoration: BoxDecoration(
-                                                        image: DecorationImage(
-                                                          image: AssetImage(
-                                                            'assets/images/post.png',
-                                                          ),
-                                                          fit: BoxFit.cover,
-                                                        ),
                                                         color: Color(
                                                           0xffFDEDCD,
                                                         ),
@@ -2154,31 +2582,39 @@ class _PotfolioState extends State<Potfolio> {
                                                               20,
                                                             ),
                                                       ),
-                                                    ),
-                                                  ),
-                                                  Padding(
-                                                    padding: EdgeInsets.only(
-                                                      top: size.height * 0.04,
-                                                      left: size.width * 0.04,
-                                                      bottom: size.width * 0.04,
-                                                    ),
-                                                    child: Container(
-                                                      height: 150,
-                                                      width: 150,
-                                                      decoration: BoxDecoration(
-                                                        image: DecorationImage(
-                                                          image: AssetImage(
-                                                            'assets/images/posts.png',
+                                                      child: Column(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        children: [
+                                                          Column(
+                                                            children: [
+                                                              CircleAvatar(
+                                                                radius: 30,
+                                                                backgroundColor:
+                                                                    Color(
+                                                                      0xffFDEDCD,
+                                                                    ),
+                                                                child: Image.asset(
+                                                                  'assets/images/canva.png',
+                                                                  height: 100,
+                                                                  width: 100,
+                                                                ),
+                                                              ),
+                                                              Text(
+                                                                'Canva',
+                                                                style: TextStyle(
+                                                                  fontFamily:
+                                                                      'fonts',
+                                                                  fontSize: 14,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
+                                                                ),
+                                                              ),
+                                                            ],
                                                           ),
-                                                          fit: BoxFit.cover,
-                                                        ),
-                                                        color: Color(
-                                                          0xffFDEDCD,
-                                                        ),
-                                                        borderRadius:
-                                                            BorderRadius.circular(
-                                                              20,
-                                                            ),
+                                                        ],
                                                       ),
                                                     ),
                                                   ),
@@ -3040,49 +3476,17 @@ class _PotfolioState extends State<Potfolio> {
                                         children: [
                                           Row(
                                             children: [
-                                              Container(
-                                                height: 300,
-                                                width: 250,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    image: AssetImage(
-                                                      "assets/images/ss.png",
-                                                    ),
-                                                    fit: BoxFit.contain,
-                                                  ),
-                                                  color: Color(0xffecf1f9),
-                                                  boxShadow: [
-                                                    BoxShadow(
-                                                      color: Colors.black
-                                                          .withOpacity(0.3),
-                                                      spreadRadius: 2,
-                                                      blurRadius: 8,
-                                                      offset: Offset(6, 6),
-                                                    ),
-                                                  ],
-
-                                                  borderRadius:
-                                                      BorderRadius.circular(20),
-                                                ),
-                                                child: Column(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [],
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: EdgeInsets.only(
-                                                  left: size.width * 0.02,
-                                                ),
+                                              InkWell(
+                                                onTap: (){
+                                                  launchUrl(Uri.parse('https://kabirmalik328-maker.github.io/WeatherAppPreview/'));
+                                                },
                                                 child: Container(
                                                   height: 300,
                                                   width: 250,
                                                   decoration: BoxDecoration(
                                                     image: DecorationImage(
                                                       image: AssetImage(
-                                                        "assets/images/sw.png",
+                                                        "assets/images/ss.png",
                                                       ),
                                                       fit: BoxFit.contain,
                                                     ),
@@ -3096,19 +3500,15 @@ class _PotfolioState extends State<Potfolio> {
                                                         offset: Offset(6, 6),
                                                       ),
                                                     ],
-
+                                                
                                                     borderRadius:
-                                                        BorderRadius.circular(
-                                                          20,
-                                                        ),
+                                                        BorderRadius.circular(20),
                                                   ),
                                                   child: Column(
                                                     mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
+                                                        MainAxisAlignment.center,
                                                     crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .center,
+                                                        CrossAxisAlignment.center,
                                                     children: [],
                                                   ),
                                                 ),
@@ -3117,40 +3517,91 @@ class _PotfolioState extends State<Potfolio> {
                                                 padding: EdgeInsets.only(
                                                   left: size.width * 0.02,
                                                 ),
-                                                child: Container(
-                                                  height: 300,
-                                                  width: 250,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      image: AssetImage(
-                                                        "assets/images/swa.png",
-                                                      ),
-                                                      fit: BoxFit.contain,
-                                                    ),
-                                                    color: Color(0xffecf1f9),
-                                                    boxShadow: [
-                                                      BoxShadow(
-                                                        color: Colors.black
-                                                            .withOpacity(0.3),
-                                                        spreadRadius: 2,
-                                                        blurRadius: 8,
-                                                        offset: Offset(6, 6),
-                                                      ),
-                                                    ],
-
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                          20,
+                                                child: InkWell(
+                                                  onTap: (){
+                                                    launchUrl(Uri.parse('https://kabirmalik328-maker.github.io/ShopHerePreview/'));
+                                                  },
+                                                  child: Container(
+                                                    height: 300,
+                                                    width: 250,
+                                                    decoration: BoxDecoration(
+                                                      image: DecorationImage(
+                                                        image: AssetImage(
+                                                          "assets/images/sw.png",
                                                         ),
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                      color: Color(0xffecf1f9),
+                                                      boxShadow: [
+                                                        BoxShadow(
+                                                          color: Colors.black
+                                                              .withOpacity(0.3),
+                                                          spreadRadius: 2,
+                                                          blurRadius: 8,
+                                                          offset: Offset(6, 6),
+                                                        ),
+                                                      ],
+                                                  
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                            20,
+                                                          ),
+                                                    ),
+                                                    child: Column(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .center,
+                                                      children: [],
+                                                    ),
                                                   ),
-                                                  child: Column(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .center,
-                                                    children: [],
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(
+                                                  left: size.width * 0.02,
+                                                ),
+                                                child: InkWell(
+                                                  onTap: (){
+                                                    launchUrl(Uri.parse('https://kabirmalik328-maker.github.io/ChatbotPreview/'));
+                                                  },
+                                                  child: Container(
+                                                    height: 300,
+                                                    width: 250,
+                                                    decoration: BoxDecoration(
+                                                      image: DecorationImage(
+                                                        image: AssetImage(
+                                                          "assets/images/swa.png",
+                                                        ),
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                      color: Color(0xffecf1f9),
+                                                      boxShadow: [
+                                                        BoxShadow(
+                                                          color: Colors.black
+                                                              .withOpacity(0.3),
+                                                          spreadRadius: 2,
+                                                          blurRadius: 8,
+                                                          offset: Offset(6, 6),
+                                                        ),
+                                                      ],
+                                                  
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                            20,
+                                                          ),
+                                                    ),
+                                                    child: Column(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .center,
+                                                      children: [],
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -3169,36 +3620,41 @@ class _PotfolioState extends State<Potfolio> {
                                               // left: size.width * 0.02,
                                               top: size.height * 0.04,
                                             ),
-                                            child: Container(
-                                              height: 340,
-                                              width: 730,
-                                              decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                  image: AssetImage(
-                                                    "assets/images/k.png",
+                                            child: InkWell(
+                                              onTap: (){
+                                                launchUrl(Uri.parse(''));
+                                              },
+                                              child: Container(
+                                                height: 340,
+                                                width: 730,
+                                                decoration: BoxDecoration(
+                                                  image: DecorationImage(
+                                                    image: AssetImage(
+                                                      "assets/images/k.png",
+                                                    ),
+                                                    fit: BoxFit.contain,
                                                   ),
-                                                  fit: BoxFit.contain,
+                                                  color: Color(0xffecf1f9),
+                                                  boxShadow: [
+                                                    BoxShadow(
+                                                      color: Colors.black
+                                                          .withOpacity(0.3),
+                                                      spreadRadius: 2,
+                                                      blurRadius: 8,
+                                                      offset: Offset(6, 6),
+                                                    ),
+                                                  ],
+                                              
+                                                  borderRadius:
+                                                      BorderRadius.circular(20),
                                                 ),
-                                                color: Color(0xffecf1f9),
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                    color: Colors.black
-                                                        .withOpacity(0.3),
-                                                    spreadRadius: 2,
-                                                    blurRadius: 8,
-                                                    offset: Offset(6, 6),
-                                                  ),
-                                                ],
-
-                                                borderRadius:
-                                                    BorderRadius.circular(20),
-                                              ),
-                                              child: Column(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [],
+                                                child: Column(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
+                                                  children: [],
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -3293,49 +3749,19 @@ class _PotfolioState extends State<Potfolio> {
                                           spacing: size.width * 0.02,
                                           runSpacing: size.height * 0.02,
                                           children: [
-                                            Container(
-                                              height: 300,
-                                              width: 250,
-                                              decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                  image: AssetImage(
-                                                    "assets/images/ss.png",
-                                                  ),
-                                                  fit: BoxFit.contain,
-                                                ),
-                                                color: Color(0xffecf1f9),
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                    color: Colors.black
-                                                        .withOpacity(0.3),
-                                                    spreadRadius: 2,
-                                                    blurRadius: 8,
-                                                    offset: Offset(6, 6),
-                                                  ),
-                                                ],
-
-                                                borderRadius:
-                                                    BorderRadius.circular(20),
-                                              ),
-                                              child: Column(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [],
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsets.only(
-                                                left: size.width * 0.02,
-                                              ),
+                                            InkWell(
+                                              onTap: (){
+                                                launchUrl( Uri.parse(
+                                                                  'https://kabirmalik328-maker.github.io/WeatherAppPreview/',
+                                                                ),);
+                                              },
                                               child: Container(
                                                 height: 300,
                                                 width: 250,
                                                 decoration: BoxDecoration(
                                                   image: DecorationImage(
                                                     image: AssetImage(
-                                                      "assets/images/sw.png",
+                                                      "assets/images/ss.png",
                                                     ),
                                                     fit: BoxFit.contain,
                                                   ),
@@ -3349,7 +3775,7 @@ class _PotfolioState extends State<Potfolio> {
                                                       offset: Offset(6, 6),
                                                     ),
                                                   ],
-
+                                              
                                                   borderRadius:
                                                       BorderRadius.circular(20),
                                                 ),
@@ -3366,36 +3792,83 @@ class _PotfolioState extends State<Potfolio> {
                                               padding: EdgeInsets.only(
                                                 left: size.width * 0.02,
                                               ),
-                                              child: Container(
-                                                height: 300,
-                                                width: 250,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    image: AssetImage(
-                                                      "assets/images/swa.png",
+                                              child: InkWell(
+                                                onTap: (){
+                                                  launchUrl(Uri.parse('https://kabirmalik328-maker.github.io/ShopHerePreview/'));
+                                                },
+                                                child: Container(
+                                                  height: 300,
+                                                  width: 250,
+                                                  decoration: BoxDecoration(
+                                                    image: DecorationImage(
+                                                      image: AssetImage(
+                                                        "assets/images/sw.png",
+                                                      ),
+                                                      fit: BoxFit.contain,
                                                     ),
-                                                    fit: BoxFit.contain,
+                                                    color: Color(0xffecf1f9),
+                                                    boxShadow: [
+                                                      BoxShadow(
+                                                        color: Colors.black
+                                                            .withOpacity(0.3),
+                                                        spreadRadius: 2,
+                                                        blurRadius: 8,
+                                                        offset: Offset(6, 6),
+                                                      ),
+                                                    ],
+                                                
+                                                    borderRadius:
+                                                        BorderRadius.circular(20),
                                                   ),
-                                                  color: Color(0xffecf1f9),
-                                                  boxShadow: [
-                                                    BoxShadow(
-                                                      color: Colors.black
-                                                          .withOpacity(0.3),
-                                                      spreadRadius: 2,
-                                                      blurRadius: 8,
-                                                      offset: Offset(6, 6),
-                                                    ),
-                                                  ],
-
-                                                  borderRadius:
-                                                      BorderRadius.circular(20),
+                                                  child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.center,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment.center,
+                                                    children: [],
+                                                  ),
                                                 ),
-                                                child: Column(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [],
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.only(
+                                                left: size.width * 0.02,
+                                              ),
+                                              child: InkWell(
+                                                onTap: (){
+                                                  launchUrl(Uri.parse('https://kabirmalik328-maker.github.io/ChatbotPreview/'));
+                                                },
+                                                child: Container(
+                                                  height: 300,
+                                                  width: 250,
+                                                  decoration: BoxDecoration(
+                                                    image: DecorationImage(
+                                                      image: AssetImage(
+                                                        "assets/images/swa.png",
+                                                      ),
+                                                      fit: BoxFit.contain,
+                                                    ),
+                                                    color: Color(0xffecf1f9),
+                                                    boxShadow: [
+                                                      BoxShadow(
+                                                        color: Colors.black
+                                                            .withOpacity(0.3),
+                                                        spreadRadius: 2,
+                                                        blurRadius: 8,
+                                                        offset: Offset(6, 6),
+                                                      ),
+                                                    ],
+                                                
+                                                    borderRadius:
+                                                        BorderRadius.circular(20),
+                                                  ),
+                                                  child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.center,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment.center,
+                                                    children: [],
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -3415,36 +3888,41 @@ class _PotfolioState extends State<Potfolio> {
                                                 top: size.height * 0.02,
                                                 bottom: size.height * 0.02,
                                               ),
-                                              child: Container(
-                                                height: 160,
-                                                width: 680,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    image: AssetImage(
-                                                      "assets/images/k.png",
+                                              child: InkWell(
+                                                onTap: (){
+                                                  launchUrl(Uri.parse(''));
+                                                },
+                                                child: Container(
+                                                  height: 160,
+                                                  width: 680,
+                                                  decoration: BoxDecoration(
+                                                    image: DecorationImage(
+                                                      image: AssetImage(
+                                                        "assets/images/k.png",
+                                                      ),
+                                                      fit: BoxFit.contain,
                                                     ),
-                                                    fit: BoxFit.contain,
+                                                    color: Color(0xffecf1f9),
+                                                    boxShadow: [
+                                                      BoxShadow(
+                                                        color: Colors.black
+                                                            .withOpacity(0.3),
+                                                        spreadRadius: 2,
+                                                        blurRadius: 8,
+                                                        offset: Offset(6, 6),
+                                                      ),
+                                                    ],
+                                                
+                                                    borderRadius:
+                                                        BorderRadius.circular(20),
                                                   ),
-                                                  color: Color(0xffecf1f9),
-                                                  boxShadow: [
-                                                    BoxShadow(
-                                                      color: Colors.black
-                                                          .withOpacity(0.3),
-                                                      spreadRadius: 2,
-                                                      blurRadius: 8,
-                                                      offset: Offset(6, 6),
-                                                    ),
-                                                  ],
-
-                                                  borderRadius:
-                                                      BorderRadius.circular(20),
-                                                ),
-                                                child: Column(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [],
+                                                  child: Column(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.center,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment.center,
+                                                    children: [],
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -3718,28 +4196,30 @@ class _PotfolioState extends State<Potfolio> {
                                                                               40,
                                                                             ),
                                                                       ),
-                                                                       child: Center(
-                                                                            child: InkWell(
-                                                                              onTap: () {
-                                                                                launchUrl(
-                                                                                  Uri.parse(
-                                                                                    'https://www.devsinntechnologies.com',
-                                                                                  ),
-                                                                                );
-                                                                                ;
-                                                                              },
-                                                                              child: Text(
-                                                                                'View >',
-                                                                                style: TextStyle(
-                                                                                  fontFamily: 'font',
-
-                                                                                  fontWeight: FontWeight.bold,
-                                                                                  color: Color(0xff7c2824),
-                                                                                  fontSize: 18,
-                                                                                ),
+                                                                      child: Center(
+                                                                        child: InkWell(
+                                                                          onTap: () {
+                                                                            launchUrl(
+                                                                              Uri.parse(
+                                                                                'https://www.devsinntechnologies.com',
                                                                               ),
+                                                                            );
+                                                                            ;
+                                                                          },
+                                                                          child: Text(
+                                                                            'View =>',
+                                                                            style: TextStyle(
+                                                                              fontFamily: 'font',
+
+                                                                              fontWeight: FontWeight.bold,
+                                                                              color: Color(
+                                                                                0xff7c2824,
+                                                                              ),
+                                                                              fontSize: 14,
                                                                             ),
                                                                           ),
+                                                                        ),
+                                                                      ),
                                                                     ),
                                                                   ],
                                                                 ),
@@ -4060,13 +4540,15 @@ class _PotfolioState extends State<Potfolio> {
                                                                                 ;
                                                                               },
                                                                               child: Text(
-                                                                                'View >',
+                                                                                'View =>',
                                                                                 style: TextStyle(
                                                                                   fontFamily: 'font',
 
                                                                                   fontWeight: FontWeight.bold,
-                                                                                   color: Color(0xff7c2824),
-                                                                                  fontSize: 18,
+                                                                                  color: Color(
+                                                                                    0xff7c2824,
+                                                                                  ),
+                                                                                  fontSize: 16,
                                                                                 ),
                                                                               ),
                                                                             ),
@@ -4372,7 +4854,7 @@ class _PotfolioState extends State<Potfolio> {
                                                                   ),
                                                                   child: Center(
                                                                     child: Text(
-                                                                      'Send >',
+                                                                      'Send =>',
                                                                       style: TextStyle(
                                                                         fontFamily:
                                                                             'fonts',
@@ -4705,7 +5187,7 @@ class _PotfolioState extends State<Potfolio> {
                                                                       padding: EdgeInsets.only(
                                                                         bottom:
                                                                             size.height *
-                                                                            0.15,
+                                                                            0.17,
                                                                       ),
                                                                       child: const Icon(
                                                                         Icons
@@ -4722,7 +5204,7 @@ class _PotfolioState extends State<Potfolio> {
                                                                 padding: EdgeInsets.only(
                                                                   top:
                                                                       size.height *
-                                                                      0.02,
+                                                                      0.06,
                                                                   left:
                                                                       size.width *
                                                                       0.27,
@@ -4748,7 +5230,7 @@ class _PotfolioState extends State<Potfolio> {
                                                                       ),
                                                                       child: Center(
                                                                         child: Text(
-                                                                          'Send >',
+                                                                          'Send =>',
                                                                           style: TextStyle(
                                                                             fontFamily:
                                                                                 'fonts',
@@ -4770,57 +5252,6 @@ class _PotfolioState extends State<Potfolio> {
                                                           ),
                                                         ),
                                                       ],
-                                                    ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
-                                              children: [
-                                                Padding(
-                                                  padding: EdgeInsets.only(
-                                                    right: size.width * 0.05,
-                                                    left: size.width * 0.05,
-                                                    bottom: size.height * 0.02,
-                                                  ),
-                                                  child: Container(
-                                                    height: 330,
-                                                    width: 320,
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                      image: DecorationImage(
-                                                        image: AssetImage(
-                                                          "assets/images/contact.jpg",
-                                                        ),
-                                                        fit: BoxFit.cover,
-                                                      ),
-                                                      boxShadow: [
-                                                        BoxShadow(
-                                                          color: Colors.black
-                                                              .withOpacity(0.3),
-                                                          spreadRadius: 2,
-                                                          blurRadius: 8,
-                                                          offset: Offset(6, 6),
-                                                        ),
-                                                      ],
-
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                            20,
-                                                          ),
-                                                    ),
-                                                    child: Column(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .center,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .center,
-                                                      children: [],
                                                     ),
                                                   ),
                                                 ),
@@ -4883,7 +5314,7 @@ class _PotfolioState extends State<Potfolio> {
                                                   0xffFDEDCD,
                                                 ),
                                                 color: Color(0xffFDEDCD),
-                                                fontSize: 16,
+                                                fontSize: 18,
                                               ),
                                             ),
                                           ],
@@ -4904,9 +5335,9 @@ class _PotfolioState extends State<Potfolio> {
                                               child: Text(
                                                 '• Home',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ),
@@ -4922,9 +5353,9 @@ class _PotfolioState extends State<Potfolio> {
                                               child: Text(
                                                 '• About',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ),
@@ -4940,9 +5371,9 @@ class _PotfolioState extends State<Potfolio> {
                                               child: Text(
                                                 '• Skills',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ),
@@ -4958,9 +5389,9 @@ class _PotfolioState extends State<Potfolio> {
                                               child: Text(
                                                 '• Education',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ),
@@ -4976,9 +5407,9 @@ class _PotfolioState extends State<Potfolio> {
                                               child: Text(
                                                 '• Work',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ),
@@ -4994,9 +5425,9 @@ class _PotfolioState extends State<Potfolio> {
                                               child: Text(
                                                 '• Experience',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ),
@@ -5012,9 +5443,9 @@ class _PotfolioState extends State<Potfolio> {
                                               child: Text(
                                                 '• Contact',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ),
@@ -5026,7 +5457,7 @@ class _PotfolioState extends State<Potfolio> {
                                 ),
                                 Padding(
                                   padding: EdgeInsets.only(
-                                    left: size.width * 0.16,
+                                    left: size.width * 0.14,
                                     top: size.height * 0.04,
                                   ),
                                   child: Container(
@@ -5049,7 +5480,7 @@ class _PotfolioState extends State<Potfolio> {
                                                 ),
                                                 color: Color(0xffFDEDCD),
 
-                                                fontSize: 16,
+                                                fontSize: 18,
                                               ),
                                             ),
                                           ],
@@ -5067,8 +5498,8 @@ class _PotfolioState extends State<Potfolio> {
                                                 child: Text(
                                                   "Thank you for taking the time to explore my portfolio. I truly appreciate your visit and would love to stay connected. Feel free to reach out or follow me on my social channels, where I share more of my work, ideas, and updates.",
                                                   style: TextStyle(
-                                                    // fontFamily: 'fonts',
-                                                    fontSize: 11,
+                                                    fontFamily: 'font',
+                                                    fontSize: 14,
                                                     color: Colors.white,
                                                   ),
                                                 ),
@@ -5085,7 +5516,7 @@ class _PotfolioState extends State<Potfolio> {
                                 Container(
                                   child: Padding(
                                     padding: EdgeInsets.only(
-                                      left: size.width * 0.10,
+                                      left: size.width * 0.08,
                                       top: size.height * 0.04,
                                       right: size.width * 0.08,
                                     ),
@@ -5115,7 +5546,7 @@ class _PotfolioState extends State<Potfolio> {
                                                     0xffFDEDCD,
                                                   ),
                                                   color: Color(0xffFDEDCD),
-                                                  fontSize: 16,
+                                                  fontSize: 18,
                                                 ),
                                               ),
                                             ],
@@ -5145,7 +5576,7 @@ class _PotfolioState extends State<Potfolio> {
                                                 style: TextStyle(
                                                   // fontFamily: 'fonts',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ],
@@ -5174,7 +5605,7 @@ class _PotfolioState extends State<Potfolio> {
                                                 style: TextStyle(
                                                   // fontFamily: 'fonts',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ],
@@ -5205,7 +5636,7 @@ class _PotfolioState extends State<Potfolio> {
                                                   fontFamily: 'fonts',
 
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 14,
                                                 ),
                                               ),
                                             ],
@@ -5243,7 +5674,7 @@ class _PotfolioState extends State<Potfolio> {
                                                 ),
                                               ),
                                               SizedBox(
-                                                width: size.width * 0.03,
+                                                width: size.width * 0.02,
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
@@ -5299,185 +5730,6 @@ class _PotfolioState extends State<Potfolio> {
                               spacing: size.width * 0.02,
                               runSpacing: size.height * 0.02,
                               children: [
-                                Container(
-                                  child: Padding(
-                                    padding: EdgeInsets.only(
-                                      left: size.width * 0.08,
-                                      top: size.height * 0.04,
-                                    ),
-                                    child: Column(
-                                      children: [
-                                        Row(
-                                          children: [
-                                            Text(
-                                              "Quick Link's :",
-                                              style: TextStyle(
-                                                fontFamily: 'font',
-                                                fontWeight: FontWeight.bold,
-
-                                                decoration:
-                                                    TextDecoration.underline,
-                                                decorationColor: Color(
-                                                  0xffFDEDCD,
-                                                ),
-                                                color: Color(0xffFDEDCD),
-                                                fontSize: 16,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children: [
-                                            TextButton(
-                                              onPressed: () {
-                                                Navigator.of(context).pop();
-                                              },
-                                              style: TextButton.styleFrom(
-                                                padding: EdgeInsets.zero,
-                                                minimumSize: Size(0, 0),
-                                                tapTargetSize:
-                                                    MaterialTapTargetSize
-                                                        .shrinkWrap,
-                                              ),
-                                              child: Text(
-                                                '• Home',
-                                                style: TextStyle(
-                                                  // fontFamily: 'fonts',
-                                                  color: Colors.white,
-                                                  fontSize: 11,
-                                                ),
-                                              ),
-                                            ),
-                                            TextButton(
-                                              onPressed: () {
-                                                Navigator.of(context).pop();
-                                              },
-                                              style: TextButton.styleFrom(
-                                                padding: EdgeInsets.zero,
-                                                minimumSize: Size(0, 0),
-                                                tapTargetSize:
-                                                    MaterialTapTargetSize
-                                                        .shrinkWrap,
-                                              ),
-                                              child: Text(
-                                                '• About',
-                                                style: TextStyle(
-                                                  // fontFamily: 'fonts',
-                                                  color: Colors.white,
-                                                  fontSize: 11,
-                                                ),
-                                              ),
-                                            ),
-                                            TextButton(
-                                              onPressed: () {
-                                                Navigator.of(context).pop();
-                                              },
-                                              style: TextButton.styleFrom(
-                                                padding: EdgeInsets.zero,
-                                                minimumSize: Size(0, 0),
-                                                tapTargetSize:
-                                                    MaterialTapTargetSize
-                                                        .shrinkWrap,
-                                              ),
-                                              child: Text(
-                                                '• Skills',
-                                                style: TextStyle(
-                                                  // fontFamily: 'fonts',
-                                                  color: Colors.white,
-                                                  fontSize: 11,
-                                                ),
-                                              ),
-                                            ),
-                                            TextButton(
-                                              onPressed: () {
-                                                Navigator.of(context).pop();
-                                              },
-                                              style: TextButton.styleFrom(
-                                                padding: EdgeInsets.zero,
-                                                minimumSize: Size(0, 0),
-                                                tapTargetSize:
-                                                    MaterialTapTargetSize
-                                                        .shrinkWrap,
-                                              ),
-                                              child: Text(
-                                                '• Education',
-                                                style: TextStyle(
-                                                  // fontFamily: 'fonts',
-                                                  color: Colors.white,
-                                                  fontSize: 11,
-                                                ),
-                                              ),
-                                            ),
-                                            TextButton(
-                                              onPressed: () {
-                                                Navigator.of(context).pop();
-                                              },
-                                              style: TextButton.styleFrom(
-                                                padding: EdgeInsets.zero,
-                                                minimumSize: Size(0, 0),
-                                                tapTargetSize:
-                                                    MaterialTapTargetSize
-                                                        .shrinkWrap,
-                                              ),
-                                              child: Text(
-                                                '• Work',
-                                                style: TextStyle(
-                                                  // fontFamily: 'fonts',
-                                                  color: Colors.white,
-                                                  fontSize: 11,
-                                                ),
-                                              ),
-                                            ),
-                                            TextButton(
-                                              onPressed: () {
-                                                Navigator.of(context).pop();
-                                              },
-                                              style: TextButton.styleFrom(
-                                                padding: EdgeInsets.zero,
-                                                minimumSize: Size(0, 0),
-                                                tapTargetSize:
-                                                    MaterialTapTargetSize
-                                                        .shrinkWrap,
-                                              ),
-                                              child: Text(
-                                                '• Experience',
-                                                style: TextStyle(
-                                                  // fontFamily: 'fonts',
-                                                  color: Colors.white,
-                                                  fontSize: 11,
-                                                ),
-                                              ),
-                                            ),
-                                            TextButton(
-                                              onPressed: () {
-                                                Navigator.of(context).pop();
-                                              },
-                                              style: TextButton.styleFrom(
-                                                padding: EdgeInsets.zero,
-                                                minimumSize: Size(0, 0),
-                                                tapTargetSize:
-                                                    MaterialTapTargetSize
-                                                        .shrinkWrap,
-                                              ),
-                                              child: Text(
-                                                '• Contact',
-                                                style: TextStyle(
-                                                  // fontFamily: 'fonts',
-                                                  color: Colors.white,
-                                                  fontSize: 11,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
                                 Padding(
                                   padding: EdgeInsets.only(
                                     left: size.width * 0.08,
@@ -5521,8 +5773,8 @@ class _PotfolioState extends State<Potfolio> {
                                                 child: Text(
                                                   "Thank you for taking the time to explore my portfolio. I truly appreciate your visit and would love to stay connected. Feel free to reach out or follow me on my social channels, where I share more of my work, ideas, and updates.",
                                                   style: TextStyle(
-                                                    // fontFamily: 'fonts',
-                                                    fontSize: 11,
+                                                    fontFamily: 'font',
+                                                    fontSize: 13,
                                                     color: Colors.white,
                                                   ),
                                                 ),
@@ -5597,9 +5849,9 @@ class _PotfolioState extends State<Potfolio> {
                                               Text(
                                                 'kabirmalik328@gmail.com',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 13,
                                                 ),
                                               ),
                                             ],
@@ -5626,9 +5878,9 @@ class _PotfolioState extends State<Potfolio> {
                                               Text(
                                                 'Lahore, Pakistan - 540000',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 13,
                                                 ),
                                               ),
                                             ],
@@ -5656,9 +5908,9 @@ class _PotfolioState extends State<Potfolio> {
                                               Text(
                                                 '+92 305-155-5866',
                                                 style: TextStyle(
-                                                  // fontFamily: 'fonts',
+                                                  fontFamily: 'font',
                                                   color: Colors.white,
-                                                  fontSize: 11,
+                                                  fontSize: 13,
                                                 ),
                                               ),
                                             ],
@@ -5668,7 +5920,7 @@ class _PotfolioState extends State<Potfolio> {
                                           padding: EdgeInsets.only(
                                             top: size.height * 0.02,
                                             left: size.width * 0.08,
-                                            bottom: size.height * 0.04,
+                                            bottom: size.height * 0.02,
                                           ),
                                           child: Row(
                                             crossAxisAlignment:
@@ -5685,14 +5937,14 @@ class _PotfolioState extends State<Potfolio> {
                                                   ),
                                                 ),
                                                 child: CircleAvatar(
-                                                  radius: 15,
+                                                  radius: 20,
                                                   backgroundColor: Color(
                                                     0xff7c2824,
                                                   ),
                                                   child: Image.asset(
                                                     'assets/images/github.png',
-                                                    height: 25,
-                                                    width: 25,
+                                                    height: 28,
+                                                    width: 28,
                                                   ),
                                                 ),
                                               ),
@@ -5711,7 +5963,7 @@ class _PotfolioState extends State<Potfolio> {
                                                   ),
                                                 ),
                                                 child: CircleAvatar(
-                                                  radius: 15,
+                                                  radius: 20,
                                                   backgroundColor: Color(
                                                     0xff7c2824,
                                                   ),
@@ -5723,6 +5975,31 @@ class _PotfolioState extends State<Potfolio> {
                                                 ),
                                               ),
                                             ],
+                                          ),
+                                        ),
+                                        Divider(
+                                          thickness: 2,
+                                          color: Color(0xffFDEDCD),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(
+                                            bottom: size.height * 0.04,
+                                            top: size.height * 0.01,
+                                          ),
+                                          child: Container(
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                Text(
+                                                  'Designed by M.Kabeer & Fiza Noor',
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontFamily: 'font',
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                         ),
                                       ],
